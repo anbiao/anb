@@ -1,0 +1,65 @@
+consT Int ci_1=1,ci_2=2,ci_3=3;
+const float cf_1=1.0,cf_2=1.1234567890123456789,cf_3=0.123;
+const char cc_1='a',cc_2='+',cc_3='3';
+
+int vi_1,vi_2, vi_1;
+float vf_1,vf_2;
+char vc_1,vc_2;
+
+int function_1(int a, float b, char c){
+	int num[10
+	float numfloat[10];
+	char carray[10];
+	printf("***function1***");
+	A=0;
+	B=1.0;
+	C='c';
+	cArrAy[0]=1;
+	NUM[0]=1;
+	nuMFLoat[0]=1.1;
+	printf(a);
+	printf(b);
+	printf(c);
+	printf(carray[0]);
+	printf(num[0]);
+	printf(numfloat[0]);
+}
+void function_2(){
+	const xxx=1;
+	const float vvv=1.1;
+	const char a='a';
+	printf("***function2***");
+	vi_1=XxXx;
+	VI_2=Xxx;
+	VF_1=vVv;
+	vf_2=vvv;
+	vc_1=A;
+	vc_2=a;
+	printf(vi_1);
+	printf(vi_2);
+	printf(vf_1);
+	printf(vf_2);
+	printf(vc_1);
+	printf(vc_2);
+}
+int oooo;
+void main(){
+	const int mmm=123;
+	int uuu;
+	uuu=456;
+	printf("***const***");
+	printf(ci_1);
+	printf(ci_2);
+	printf(ci_3);
+	printf(cf_1);
+	printf(cf_2);
+	printf(cf_3);
+	printf(cc_1);
+	printf(cc_2);
+	printf(cc_3);
+	printf(mmm);
+	printf(uuu);
+	FuncTIon_1();
+	funCtiOn_2();
+	printf("over!");
+}

@@ -1,0 +1,27 @@
+int fun1(int n) 
+{	
+	if (n < 1){
+		printf(n);
+		return (0);
+	}
+	if (n == 1 ){
+		printf(n);
+		return (1);
+	}
+	if (n ==2 ){
+		printf(n);
+		return (1);
+	}
+	else{
+		printf(n);
+		return (fun1(n - 1) + fun1(n - 2));
+	}
+}
+void main(){
+int a;
+printf("please input a number:");
+scanf(a);
+printf("your number is:",a);
+printf("fib number is:");
+printf(fun1(a));
+}

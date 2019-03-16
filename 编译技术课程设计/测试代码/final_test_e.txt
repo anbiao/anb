@@ -1,0 +1,78 @@
+coNst InT ci1=10, ci2=20, ci3=30;
+const float cf1=11.11, cf2=22.22, cf3=33.33;
+const char CC1='a', cc2='b';
+
+int vi_1,vi_2;
+float vf_1,vf_2,vf_3;
+char vc_1,vc_2,vc_3;
+
+void fun_1(){
+const int fun_1_ci1=11, fun_1_ci2=22;
+const float fun_1_cf1=1.0, fun_1_cf2=2.0;
+int fun_1_vi1;
+float fun_1_vf1;
+char fun_1_vc1;
+
+printf("fun_1's result:");
+
+fun_1_vi1=-1+2++3+-4+cc1+CC2*cc3;
+printf("@1 fun_1_vi1:", fun_1_vi1);
+
+fun_1_vi1=-30*(-13+26)/10;
+printf("@2 fun_1_vi1:", fun_1_vi1);
+
+fun_1_vi2=fun_1_vi1+(fun_1_vi1-10)*fun_1_vi1-(fun_1_ci2/fun_1_ci1);
+printf("@3 fun_1_vi2:", fun_1_vi2);
+
+fun_1_vf1=fun_1_cf1+cf1+cf2-cf3+1.1*cc1;
+printf("@4 fun_1_vf1:");
+printf(fun_1_vf1);
+
+fun_1_vf1=fun_1_cf2/fun_1_cf1*(fun_1_cf1*fun_1_cf2);
+printf("@5 fun_1_vf1:");
+printf(fun_1_vf1);
+
+fun_1_vc1=CC2;
+printf("@6 fun_1_vc1:");
+printf(fun_1_vc1);
+
+printf("fun_1 is over!");
+}
+
+void fun_2(int fun_2_ti, float fun_2_tf, char fun_2_tc){
+printf("fun_2's result:");
+
+if(fun_2_ti>=20)
+printf("@1 fun_2_ti>=20: ",fun_2_ti);
+else if(fun_2_ti<=10)
+printf("@1 fun_2_ti<=10: ",fun_2_ti);
+else printf("@1 10<fun_2_ti<20:", fun_2_ti);
+
+if(fun_2_tf>=20.0)
+printf("@1 fun_2_tf>=20.0: ",fun_2_tf);
+else if(fun_2_tf<=10.0)
+printf("@1 fun_2_tf<=10: ",fun_2_tf);
+else printf("@1 10<fun_2_tf<20:", fun_2_tf);
+
+printf("fun_2_tc:", fun_2_tc);
+switch(fun_2_tc){
+case 'a':printf("@2 fun_2_tc is 'a'.");
+case 'b':printf("@2 fun_2_tc is 'b'.");
+case 'c':printf("@2 fun_2_tc is 'c'.");
+default:{
+printf("@2 fun_2_tc is",fun_2_tc);
+}
+}
+
+printf("fun_2 is over!");
+}
+
+
+void main(){
+printf("program begin!");
+printf("please input 1-int, 1-float, 1-char");
+scanf(vi_1,vf_1,vc_1);
+fun_1();
+fun_2(vi_1,vf_1,vc_1);
+printf("program end!");
+}

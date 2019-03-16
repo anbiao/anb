@@ -1,0 +1,86 @@
+const Int ci1=1,ci2=2,ci3=3;
+
+int vi1,vi2,vi3;
+
+int function1(){
+    const char cc3='A';
+    int i;
+    i=0;
+    while(i<=5){
+        vi3=-vi1*vi2+vi3;
+        i=i+1;
+    }
+    vi3=i+cc3+vi3;
+    printf(VI3);
+    return (vi3);
+}
+
+void function2(int a){
+    const float cf1=1.23;
+    const int ci4=-10, ci5=10, ci6=0;
+    int temp_i;
+    int num[3],num1[4];
+    float vf1;
+    if(1){
+        num[0]=vi2+ci4;
+        num[1]=vi2+ci5;
+        num[2]=vi2+ci6;
+    }
+    printf("num[0]:",num[0]);
+    printf("num[1]:",num[1]);
+    printf("num[2]:",num[2]);
+    switch(a){
+        case 1:vi3=num[0];
+        case 2:vi3=num[1];
+        case 3:vi3=num[2];
+    }
+    temp_i=function1();
+    ;
+    if(temp_i>0)
+		vf1=temp_i+ci5*2.1;
+    else vf1=temp_i+cf1;
+    printf(" output is ",vf1);
+}
+
+int function3(int a, int b){
+    vi3=a-b;
+    if(vi3<0) {
+        function3(vi3+10,vi3);
+        return;
+    }
+    else{
+        printf("output is ",vi3);
+        return;
+    }
+}
+
+void main(){
+    const char cc1='a', cc2='b';
+    char temp_c;
+    float x;
+    if(0!=1){
+        x=3.1/1;
+        printf("x = ",x);
+    }
+    printf("please input two number:");
+    scanf(vi1,vi2);
+    if(vi1>='a'){
+        if(vi1<10)
+            temp_c=cc1;
+        else if(vi1>20) 
+            temp_c=cc2;
+        else if(vi1==15) 
+            temp_c=cc1;
+        else 
+            temp_c='c';
+    
+    else temp_c='d';
+    switch(temp_c){
+        case 'a':function2();
+        case 'b':function2(ci2);
+        case 'c':function2(ci3);
+        default:function3(vi1,vi2);
+    }
+    (1+2)
+    printf("Over!");
+}
