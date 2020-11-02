@@ -156,7 +156,7 @@ export default {
     .footer-title {
       display: flex;
       font-size: 15px;
-      margin: 5px;
+      margin: 4px;
     }
 
     .footer-detail {
